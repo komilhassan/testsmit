@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+     
+        <li><a href="results.html">Quiz Results</a></li>
+    </ul>
+</nav>
+
+<h1>Welcome to Quiz Application</h1>
+
+<div class="container">
+    <h1>Quiz Application</h1>
+<!-- Student details form -->
+<div id="student-details">
+    <h2>Student Details</h2>
+    <form id="student-form">
+        <div class="form-group">
+            <label for="roll-number">Roll Number:</label>
+            <input type="text" id="roll-number" name="roll-number" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" name="batch" required>
+        </div>
+        <div class="form-group">
+            <label for="section">Section:</label>
+            <input type="text" id="section" name="section" required>
+        </div>
+        <button type="button" onclick="displayStudentDetails()">Submit</button>
+    </form>
+</div>
+
+<!-- Container to display student details -->
+<div id="display-details">
+    <h2>Student Details</h2>
+    <p><strong>Roll Number:</strong> <span id="display-roll-number"></span></p>
+    <p><strong>Name:</strong> <span id="display-name"></span></p>
+    <p><strong>Batch:</strong> <span id="display-batch"></span></p>
+    <p><strong>Section:</strong> <span id="display-section"></span></p>
+</div>
+   
+<script src="quiz-evaluation.js" defer></script>
+<script src="results.js" defer></script>
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>Contact: info@example.com</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+    
+

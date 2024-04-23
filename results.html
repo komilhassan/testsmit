@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+           
+            <li><a href="results.html">Quiz Results</a></li>
+        </ul>
+    </nav>
+    
+
+<div class="container">
+    <h1>Quiz Results</h1>
+
+    <div id="quiz">
+        <h2>Quiz Application</h2>
+        <form id="quiz-form">
+            <!-- Quiz questions and options here -->
+            <div id="quiz">
+                
+                <form id="quiz-form">
+                    <div class="form-group">
+                        <label for="quiz-topic">Topic:</label>
+                        <input type="text" id="quiz-topic" name="quiz-topic" required>
+                    </div>
+                    <div class="question">
+                        <label>Question 1: What does HTML stand for?</label><br>
+                        <input type="radio" name="q1" value="1"> a) Hyper Text Markup Language<br>
+                        <input type="radio" name="q1" value="2"> b) High-level Text Manipulation Language<br>
+                        <input type="radio" name="q1" value="3"> c) Hyperlink and Text Markup Language<br>
+                        <input type="radio" name="q1" value="4"> d) Hyperlink Text Manipulation Language<br>
+                    </div>
+                    <div class="question">
+                        <label>Question 2: Which CSS property is used to change the text color of an element?</label><br>
+                        <input type="radio" name="q2" value="1"> a) color<br>
+                        <input type="radio" name="q2" value="2"> b) text-color<br>
+                        <input type="radio" name="q2" value="3"> c) font-color<br>
+                        <input type="radio" name="q2" value="4"> d) text-style<br>
+                    </div>
+                    <div class="question">
+                        <label>Question 3: What is JavaScript primarily used for?</label><br>
+                        <input type="radio" name="q3" value="1"> a) Styling web pages<br>
+                        <input type="radio" name="q3" value="2"> b) Creating interactive elements on web pages<br>
+                        <input type="radio" name="q3" value="3"> c) Defining page structure<br>
+                        <input type="radio" name="q3" value="4"> d) Storing data<br>
+                    </div>
+                    <div class="question">
+                        <label>Question 4: Which of the following is NOT a valid HTML tag?</label><br>
+                        <input type="radio" name="q4" value="1"> a) &lt;div&gt;<br>
+                        <input type="radio" name="q4" value="2"> b) &lt;span&gt;<br>
+                        <input type="radio" name="q4" value="3"> c) &lt;section&gt;<br>
+                        <input type="radio" name="q4" value="4"> d) &lt;paragraph&gt;<br>
+                    </div>
+                    <div class="question">
+                        <label>Question 5: What is the purpose of the "src" attribute in the &lt;script&gt; tag?</label><br>
+                        <input type="radio" name="q5" value="1"> a) It specifies the language of the script<br>
+                        <input type="radio" name="q5" value="2"> b) It specifies the location of the script file<br>
+                        <input type="radio" name="q5" value="3"> c) It specifies the style of the script<br>
+                        <input type="radio" name="q5" value="4"> d) It specifies the size of the script<br>
+                    </div>
+                    <button type="submit">Submit Quiz</button>
+                </form>
+            </div>
+    <!-- Display student's details, quiz topic, selected answers, correct answers, and total marks -->
+    <div id="display-results">
+        <!-- JavaScript will populate this section with the quiz results -->
+    </div>
+</div>
+
+<script src="results.js" defer></script>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>Contact: info@example.com</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
